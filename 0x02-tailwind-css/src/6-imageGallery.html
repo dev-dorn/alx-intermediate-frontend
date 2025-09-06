@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid and Flexbox Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+            <style>
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="p-4">
+    <header class="bg-blue-500 text-white p-4">
+        <h1 class="text-3xl">Responsive Car Gallery</h1>
+    </header>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 p-4">
+            <img src="./assets/car1.jpg" alt="jeep" class="w-full h-auto rounded-lg">
+            <img src="./assets/car2.jpg" alt="jeep" class="w-full h-auto rounded-lg">
+            <img src="./assets/car3.jpg" alt="jeep" class="w-full h-auto rounded-lg">
+            <img src="./assets/car4.jpg" alt="jeep" class="w-full h-auto rounded-lg">
+            <img src="./assets/car6.jpg" alt="jeep" class="w-full h-auto rounded-lg">
+            <img src="./assets/car5.jpg" alt="jeep" class="w-full h-auto rounded-lg">
+
+
+        </div>
+        <aside class="bg-green-200 p-4">Sidebar</aside>
+
+    <footer class="bg-gray-800 text-white p-4 mt-4">
+        <p>&copy; 2024 John Doe's Blog</p>
+    </footer>
+</body>
+</html>
